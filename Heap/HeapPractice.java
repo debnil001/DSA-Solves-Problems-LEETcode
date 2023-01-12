@@ -61,8 +61,8 @@ public class HeapPractice {
         pq.insert(3);
         pq.insert(0);
         pq.insert(-1);
-        pq.insert(10);
-        pq.insert(20);
+        pq.insert(-1);
+        pq.insert(-1);
 
 //        System.out.println(pq.peek());
         
