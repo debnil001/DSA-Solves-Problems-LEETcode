@@ -11,14 +11,14 @@ public class searchInRotatedSortedArray {
                 break;
             }
             if(arr[start]<=arr[mid]){
-                if(target>=arr[start] && target<=arr[mid]){
+                if(target>=arr[start] && target<arr[mid]){
                     end=mid-1;
                 }
                 else
                     start=mid+1;
             }
             else if(arr[mid]<=arr[end]){
-                if(target>=arr[mid] && target<=arr[end])
+                if(target>arr[mid] && target<=arr[end])
                     start=mid+1;
                 else
                     end=mid-1;

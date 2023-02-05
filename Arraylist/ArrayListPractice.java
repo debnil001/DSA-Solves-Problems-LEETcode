@@ -12,16 +12,25 @@ import java.util.Comparator;
  */
 public class ArrayListPractice {
     public static void main(String[]args){
-        ArrayList<Integer> list=new ArrayList<>();
-        list.add(50);
-        list.add(10);
-        list.add(60);
-        list.add(40);
-        list.add(20);
-        list.sort((a,b)->{
-            return b-a;
-        });
+        ArrayList<ArrayList<Integer>> list=new ArrayList<>();
+//        list.add(50);
+//        list.add(10);
+//        list.add(60);
+//        list.add(40);
+//        list.add(20);
+//        list.sort((a,b)->{
+//            return b-a;
+//        });
 //        Arrays.sort(list);
+          list.add(new ArrayList(Arrays.asList(1,2,3,4)));
+                     list.add(new ArrayList(Arrays.asList(6,8,9,7)));
+           for(ArrayList<Integer>  l:list){
+               for(int i:l)
+                   System.out.print(i);
+           System.out.println();
+           }
+           int a=Integer.parseInt("0200");
+           System.out.print(a);
         System.out.println(list);
     }
 }
